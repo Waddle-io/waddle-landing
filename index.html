@@ -3,52 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waddle</title>
+    <title>Waddle — Building the future with AI and strategy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav id="nav-bar">
-            <img id="nav-logo" src="assets/images/waddle_transparent_logo.png" alt="waddle logo">
 
-            <div class="nav-option">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </div>
-
-            <div id="nav-button">
-                <button>Get Started</button>
-            </div>
+    <!-- Navbar fixe -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img class="logo-img" src="assets/images/waddle_transparent_logo.png" alt="Waddle Icon">
+                <img class="logo-wordmark" src="assets/images/waddle.png" alt="Waddle">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-nav">
+                <span>Get Started</span>
+                <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+                </svg>
+            </a>
         </nav>
     </header>
 
-    <main>
-        <!--    Home    -->
+    <!-- Hero -->
+    <div id="hero" class="hero-wrapper">
+        <main class="hero-content">
+            <p class="hero-eyebrow">TECH &nbsp;/&nbsp; AI &nbsp;/&nbsp; CYBERSECURITY &nbsp;/&nbsp; DESIGN</p>
+            <h1 class="hero-title">
+                Building the future with<br>
+                <span class="hero-gradient">AI and strategy</span>
+            </h1>
+            <p class="hero-description">
+                We help organizations unlock growth and efficiency through data-driven consulting and intelligent automation.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#services" class="btn-demo">VIEW DEMO</a>
+                <a href="#contact" class="btn-start">
+                    <span>GET STARTED</span>
+                    <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+                    </svg>
+                </a>
+            </div>
+        </main>
+    </div>
 
-        <section>
-            <h2>Building the future with</h2>
-            <h2>AI and straategy</h2>
-        </section>
+    <!-- Services -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="section-header">
+                <span class="section-badge">• OUR SERVICES</span>
+                <h2 class="section-title">
+                    Digital solutions crafted for<br>
+                    <span class="text-highlight">impact and precision</span>
+                </h2>
+                <p class="section-subtitle">De la conception de maquettes soignées au développement d'applications performantes, nous donnons vie à vos idées.</p>
+            </div>
 
-        <p>We help organizations unlock growth and efficienty though data-driven consulting and intelligent automation.</p>
+            <div class="services-compact-grid">
 
-        <div>
-            <button id="demo-button">VIEW DEMO</button>
-            <button id="start-button">GET STARTED</button>
+                <a href="#contact" class="service-mini-card">
+                    <div class="mini-top">
+                        <span class="mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </span>
+                        <span class="mini-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="mini-title">Développement Web</h3>
+                    <p class="mini-sub">Sites vitrines, SaaS & plateformes web ultra-rapides.</p>
+                </a>
+
+                <a href="#contact" class="service-mini-card">
+                    <div class="mini-top">
+                        <span class="mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </span>
+                        <span class="mini-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="mini-title">Développement Mobile</h3>
+                    <p class="mini-sub">Applications iOS & Android réactives et fluides.</p>
+                </a>
+
+                <a href="#contact" class="service-mini-card">
+                    <div class="mini-top">
+                        <span class="mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </span>
+                        <span class="mini-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="mini-title">Maquettes & UI/UX</h3>
+                    <p class="mini-sub">Prototypes interactifs Figma & ergonomie sur-mesure.</p>
+                </a>
+
+                <a href="#contact" class="service-mini-card">
+                    <div class="mini-top">
+                        <span class="mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
+                            </svg>
+                        </span>
+                        <span class="mini-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </span>
+                    </div>
+                    <h3 class="mini-title">Design System & Branding</h3>
+                    <p class="mini-sub">Chartes graphiques, typographies & identités visuelles.</p>
+                </a>
+
+            </div>
         </div>
+    </section>
 
-        <section>
+    <!-- About Us Section (Bento Grid inspirée de la maquette) -->
+    <section id="about" class="about-section">
+        <div class="about-container">
 
-        </section>
+            <div class="section-header">
+                <span class="section-badge">• ABOUT US</span>
+                <h2 class="section-title about-main-title">
+                    A global consulting partner<br>
+                    dedicated to building
+                    <span class="about-inline-pill blue-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                    </span>
+                    <strong class="title-bold">smarter</strong><br>
+                    and
+                    <span class="about-inline-pill lime-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                    </span>
+                    <span class="text-adaptive">more adaptive</span>
+                </h2>
+            </div>
 
-        <!--    Services    -->
+            <!-- Bento Grid 3 Colonnes fidèles à la maquette -->
+            <div class="about-bento-grid">
+                
+                <!-- Bento 1: Carte Photo 120+ Partenaires -->
+                <div class="bento-card bento-photo-card">
+                    <img src="assets/images/about_card_photo.png" alt="120+ Collaborating with leading AI and cloud technology providers" class="bento-img-full">
+                </div>
 
-        <br>
-        <p>ABOUT US</p>
-    </main>
-    
+                <!-- Bento 2: Témoignage & 100% Mesurable -->
+                <div class="bento-card bento-quote">
+                    <span class="bento-sub-label">Commitment to measurable</span>
+                    <div class="bento-stat-large">100%</div>
+                    
+                    <div class="bento-avatars-row">
+                        <img src="assets/images/about_avatars.png" alt="Clients & Partenaires" class="bento-avatars-img">
+                    </div>
+
+                    <blockquote class="bento-quote-text">
+                        “Their automation strategy completely reshaped how we work. It's efficient, intelligent, and seamless.”
+                    </blockquote>
+                </div>
+
+                <!-- Bento 3: Colonne droite empilée (Vert Citron + Noir) -->
+                <div class="bento-col-right">
+                    <!-- Carte Vert Citron -->
+                    <div class="bento-card bento-lime">
+                        <span class="bento-sub-label text-dark">Data Points</span>
+                        <div class="bento-stat-large text-dark">520k+</div>
+                        <p class="bento-desc-dark">Analyzed monthly to power smarter business strategies.</p>
+                    </div>
+
+                    <!-- Carte Noir Profond -->
+                    <div class="bento-card bento-dark">
+                        <span class="bento-sub-label text-white">Continents</span>
+                        <div class="bento-stat-large text-white">20+</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Work Section: ezShell Showcase -->
+    <section id="work" class="work-section">
+        <div class="work-container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-badge">• NOTRE TRAVAIL</span>
+                <h2 class="section-title">
+                    Des outils concrets pensés pour <br>
+                    <span class="text-highlight">les développeurs modernes</span>
+                </h2>
+                <p class="section-subtitle">Découvrez nos réalisations et nos innovations logicielles conçues par l'équipe Waddle.</p>
+            </div>
+
+            <!-- Project Card: ezShell -->
+            <div class="project-showcase">
+                <div class="project-content">
+                    <div class="project-eyebrow">
+                        <span class="pulse-dot"></span>
+                        <span>PROJET PHARE • CLI TOOL</span>
+                    </div>
+
+                    <h3 class="project-title">ezShell</h3>
+                    <p class="project-lead">Le terminal intelligent avec IA intégrée qui comprend votre contexte de travail.</p>
+                    
+                    <p class="project-desc">
+                        Développé par l'équipe de Waddle, <strong>ezShell</strong> est un logiciel conçu pour les développeurs exigeants. Travaillez directement dans votre terminal avec une IA qui analyse vos commandes, anticipe vos besoins et résout vos erreurs en temps réel, sans jamais quitter votre workflow.
+                    </p>
+
+                    <div class="project-pills">
+                        <span class="project-pill">Terminal Native</span>
+                        <span class="project-pill">AI Context-Aware</span>
+                        <span class="project-pill">Open Source</span>
+                        <span class="project-pill">CLI Assistant</span>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://ezshell.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-start btn-ez-site">
+                            <span>Visiter le site</span>
+                            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Waddle-io/ezShell" target="_blank" rel="noopener noreferrer" class="btn-demo btn-ez-gh">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terminal Mockup Window -->
+                <div class="project-terminal">
+                    <div class="terminal-box">
+                        <div class="term-bar">
+                            <div class="term-dots">
+                                <span class="term-dot dot-red"></span>
+                                <span class="term-dot dot-yellow"></span>
+                                <span class="term-dot dot-green"></span>
+                            </div>
+                            <span class="term-title">ezshell — bash — 80×24</span>
+                            <span class="term-status"><span class="term-status-dot"></span> AI Ready</span>
+                        </div>
+                        <div class="term-content">
+                            <div class="term-row prompt">
+                                <span class="term-user">waddle@dev</span>:<span class="term-path">~/project</span><span class="term-sign">$</span>
+                                <span class="term-input">ezshell init</span>
+                            </div>
+                            <div class="term-row info">
+                                <span class="term-muted">› ezShell v1.0.0 initialisé. Contexte projet indexé.</span>
+                            </div>
+                            <div class="term-row prompt">
+                                <span class="term-user">waddle@dev</span>:<span class="term-path">~/project</span><span class="term-sign">$</span>
+                                <span class="term-input">ez "optimise le build et prépare le deploy"</span>
+                            </div>
+                            <div class="term-row ai-msg">
+                                <span class="term-ai-badge">[ezShell AI]</span>
+                                <span class="term-ai-text">Analyse complète : bundles compressés, cache activé.</span>
+                            </div>
+                            <div class="term-row code-preview">
+                                <code>✔ Build terminé en 1.4s · 0 erreur détectée</code>
+                            </div>
+                            <div class="term-row prompt">
+                                <span class="term-user">waddle@dev</span>:<span class="term-path">~/project</span><span class="term-sign">$</span>
+                                <span class="term-cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+
+            <div class="section-header">
+                <span class="section-badge">• CONTACT</span>
+                <h2 class="section-title">
+                    Donnons vie à <br>
+                    <span class="text-highlight">votre prochain projet</span>
+                </h2>
+                <p class="section-subtitle">
+                    Une idée d'application, un besoin en design ou une question sur nos outils ? Notre équipe vous répond en moins de 24 heures.
+                </p>
+            </div>
+
+            <div class="contact-card-box">
+                <!-- Gauche: Infos & réassurance -->
+                <div class="contact-side-info">
+                    <h3 class="contact-info-title">Discutons de votre vision</h3>
+                    <p class="contact-info-desc">
+                        Chaque grand produit commence par un premier échange. Nous analysons vos défis techniques et design pour construire une solution sur-mesure.
+                    </p>
+
+                    <div class="contact-items">
+                        <a href="mailto:contact@waddle.com" class="contact-item">
+                            <span class="contact-item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-item-label">Par email</span>
+                                <span class="contact-item-val">contact@waddle.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Waddle-io" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span class="contact-item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-item-label">GitHub Organisation</span>
+                                <span class="contact-item-val">github.com/Waddle-io</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <span class="contact-item-icon check-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </span>
+                            <div>
+                                <span class="contact-item-label">Engagement de réactivité</span>
+                                <span class="contact-item-val">Réponse garantie sous 24 heures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Droite: Formulaire interactif -->
+                <div class="contact-form-side">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Merci pour votre message ! Notre équipe revient vers vous très rapidement.');">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Votre nom</label>
+                                <input type="text" id="contact-name" placeholder="Alexandre Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Votre email</label>
+                                <input type="email" id="contact-email" placeholder="alex@entreprise.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-service">Type de projet</label>
+                            <select id="contact-service">
+                                <option value="web">Développement Web (Next.js, SaaS, Vitrine)</option>
+                                <option value="mobile">Développement Mobile (iOS & Android)</option>
+                                <option value="design">Maquettes UI/UX & Prototypage Figma</option>
+                                <option value="brand">Design System & Branding</option>
+                                <option value="other">Autre / Conseil Stratégique</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Votre message</label>
+                            <textarea id="contact-message" rows="4" placeholder="Décrivez brièvement votre projet, vos objectifs et vos délais..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-start btn-form-submit">
+                            <span>ENVOYER LE MESSAGE</span>
+                            <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <img class="logo-img" src="assets/images/waddle_transparent_logo.png" alt="Waddle Icon">
+                        <img class="logo-wordmark" src="assets/images/waddle.png" alt="Waddle">
+                    </a>
+                    <p class="footer-tagline">Building the future with AI, modern engineering & strategy.</p>
+                    <a href="https://github.com/Waddle-io" target="_blank" rel="noopener noreferrer" class="footer-gh-org">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>github.com/Waddle-io</span>
+                    </a>
+                </div>
+
+                <div class="footer-nav-grid">
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Produits & Outils</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://ezshell.vercel.app/" target="_blank" rel="noopener noreferrer">ezShell (Site) ↗</a></li>
+                            <li><a href="https://github.com/Waddle-io/ezShell" target="_blank" rel="noopener noreferrer">ezShell (GitHub) ↗</a></li>
+                            <li><a href="https://github.com/Waddle-io" target="_blank" rel="noopener noreferrer">Waddle-io GitHub ↗</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services">Développement Web</a></li>
+                            <li><a href="#services">Développement Mobile</a></li>
+                            <li><a href="#services">Maquettes UI/UX</a></li>
+                            <li><a href="#services">Design System</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title">Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#work">Work (ezShell)</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Waddle, Inc. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Conditions</a>
+                    <a href="#">Sécurité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/index.js"></script>
 </body>
 </html>
