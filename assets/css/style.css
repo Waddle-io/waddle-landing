@@ -1,0 +1,59 @@
+/*
+Waddle landing page — style.css
+Design Tokens, Reset, Layout, Typography
+Fonts: Space Grotesk (headings) + Geist (body/UI)
+Last updated: 2026-10
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+        
+}
+
+:root {
+    /*  Background  */
+    --bg-white: #FFFFFF;
+    --bg-dark: #000000;
+
+    /*  Text  */
+
+
+
+
+    /*  Fonts   */
+    
+    --font-one: 'Space Grotesk';
+    --font-two: 'Geist';
+
+}
+
+#nav-bar {
+    height: 60px;
+    background-color: rgb(11, 11, 71);
+    
+}
+
+#nav-logo {
+    height: 50px;
+    weight: 50px;
+    padding: 10px;
+
+}
+
+#nav-option {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+#nav-button {
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+header nav div button {
+    color: rgb(11, 11, 71);
+}
